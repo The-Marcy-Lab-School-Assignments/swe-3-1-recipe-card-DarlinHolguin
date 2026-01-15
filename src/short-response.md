@@ -7,14 +7,14 @@ Answer the following questions in your own words. Each response should be 2-4 se
 What is the difference between the `<head>` and `<body>` sections of an HTML document? What kind of content goes in each?
 
 **Your Answer:**
-
+The difference between the `<head>` & `<body>` is that on the actual website, we are able to see content put within the `<body>`. The `<head>` section is more of a background thing that we dont actually see as its where files and other setup information is contained.
 
 ## Question 2: Semantic HTML
 
 Why should we use semantic elements like `<header>`, `<main>`, and `<footer>` instead of using `<div>` tags for everything?
 
 **Your Answer:**
-
+We should use semantic elements like `<header>` `<main>`, and `<footer>` instead of `<div>` because it illustrates a clearer purpose to another developer or reader the purpose of the page. `<div>` is also a non-semantic element, a semantic element are simply names that descripe their use.
 
 ## Question 3: CSS Selectors
 
@@ -29,6 +29,7 @@ Given the following HTML:
 ```
 
 Write THREE different CSS rules:
+
 1. One that makes ALL list items have a `yellow` background
 2. One that makes only the vegetables have `green` text color
 3. One that makes only the Mango `bold`
@@ -36,16 +37,33 @@ Write THREE different CSS rules:
 **Your Answer:**
 
 ```css
+ul > li {
+  background-color: yellow;
+}
 
+.vegetable {
+  color: green;
+}
+
+#favorite {
+  font-weight: bold;
+}
 ```
-
 
 ## Question 4: The Box Model
 
 In your own words, explain the four parts of the CSS box model (content, padding, border, margin). What is the purpose of each part?
 
 **Your Answer:**
+The four parts of the CSS box model
 
+- **Content** - The main part of the HTML element that we see, things like images and texts are shown here.
+
+- **Padding** - The padding is the spacing that is in between the content and the border. It can also act as background color.
+
+- **Border** - The border is the line around the padding. It contains 3 values which are width, style, and color.
+
+- **Margin** - Creates space outside of the border, it seperates an element from other elements.
 
 ## Question 5: Box-Sizing
 
@@ -53,10 +71,8 @@ What problem does `box-sizing: border-box` solve? Why do we include it in a CSS 
 
 **Your Answer:**
 
-
 ## Question 6: Display Property
 
 What is the difference between `display: block`, `display: inline`, and `display: inline-block`? Give an example of when you might use `inline-block`.
 
 **Your Answer:**
-

@@ -10,7 +10,41 @@ ul {
 }
 
 img {
-  width: 100%;
+  width: 10%;
 }
 
 /* Add your CSS below */
+body {
+  background-color: red;
+  color: blue;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1,
+h2 {
+color: blue;
+font-size: large;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+:any-link:hover {
+  background-color: blue;
+}
+
+section {
+  background-color: white;
+  margin: 20%;
+  padding: 20%;
+  text-align: left;
+}
+
+.ingredients ul {
+  list-style: none;
+}
+
+
