@@ -7,14 +7,14 @@ Answer the following questions in your own words. Each response should be 2-4 se
 What is the difference between the `<head>` and `<body>` sections of an HTML document? What kind of content goes in each?
 
 **Your Answer:**
-The difference between the `<head>` & `<body>` is that on the actual website, we are able to see content put within the `<body>`. The `<head>` section is more of a background thing that we dont actually see as its where files and other setup information is contained.
+The difference between the `<head>` & `<body>` is that on the actual website, we are able to see content put within the `<body>`. The `<head>` section is more of a background thing that we don't actually see as its where files and other setup information is contained.
 
 ## Question 2: Semantic HTML
 
 Why should we use semantic elements like `<header>`, `<main>`, and `<footer>` instead of using `<div>` tags for everything?
 
 **Your Answer:**
-We should use semantic elements like `<header>` `<main>`, and `<footer>` instead of `<div>` because it illustrates a clearer purpose to another developer or reader the purpose of the page. `<div>` is also a non-semantic element, a semantic element are simply names that descripe their use.
+We should use semantic elements like `<header>` `<main>`, and `<footer>` instead of `<div>` because it illustrates a clearer purpose to another developer or reader the purpose of the page. `<div>` is also a non-semantic element, semantic elements are simply names that describe their use.
 
 ## Question 3: CSS Selectors
 
@@ -63,13 +63,16 @@ The four parts of the CSS box model
 
 - **Border** - The border is the line around the padding. It contains 3 values which are width, style, and color.
 
-- **Margin** - Creates space outside of the border, it seperates an element from other elements.
+- **Margin** - Creates space outside of the border, it separates an element from other elements.
 
 ## Question 5: Box-Sizing
 
 What problem does `box-sizing: border-box` solve? Why do we include it in a CSS reset at the top of our CSS files?
 
 **Your Answer:**
+The problem that `box-sizing: border-box` solves is that by default, when you set a `width` on an element, the **padding** and the **border** gets added on top of that. Meaning that it would be making the element wider than you actually wanted it to be. With `box-sizing: border-box`, the width you set **includes** the content, as well as both padding and border around it all together, so the element itself stays exactly to the size that you set it to.
+
+The reason as to why we include it in a CSS RESET at the top of our CSS files is so that this basically becomes the automatic default layout across the whole application or project, basically setting a rule in our file to always follow and apply that behavior across every element on the page.
 
 ## Question 6: Display Property
 
