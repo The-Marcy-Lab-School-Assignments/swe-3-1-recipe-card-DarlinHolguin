@@ -31,7 +31,7 @@ Be mindful of your AI usage on assignments. AI can be a great tool to help your 
 
 **<details><summary>Be Okay With Being "Provisionally Complete"</summary>**
 
-At Marcy, we will deem an assignment as "complete" if you satisfy the requirements listed below. 
+At Marcy, we will deem an assignment as "complete" if you satisfy the requirements listed below.
 
 However, we know many of you will feel the urge to hold off on submitting until your assignment feels 100% perfect. That drive for excellence is an asset!
 
@@ -52,6 +52,7 @@ Learning to move forward with provisional completeness will help you make steady
 For guidance on setting up and submitting this assignment, refer to the Marcy lab School Docs How-To guide for [Working with Short Response and Coding Assignments](https://marcylabschool.gitbook.io/marcy-lab-school-docs/how-tos/working-with-assignments#how-to-work-on-assignments).
 
 Starter files have been provided in the `src/` directory:
+
 - `index.html`
 - `ingredients.html`
 - `instructions.html`
@@ -92,22 +93,25 @@ You can view them closer up below:
 **<details><summary>Home</summary>**
 
 ![The Home page of the recipe card](./images/home.png)
+
 </details>
 
 **<details><summary>Ingredients</summary>**
 
 ![The Ingredients page of the recipe card](./images/ingredients.png)
+
 </details>
 
 **<details><summary>Instructions</summary>**
 
 ![The Instructions page of the recipe card](./images/instructions.png)
-</details>
 
+</details>
 
 ### Three Phases
 
 This assignment is broken into **three phases** that align with what you're learning each day.
+
 1. [HTML Structure](#phase-1-html-structure-monday) — Create the content and structure of all three pages. Connect them with hyperlinks. No styling yet!
 2. [CSS: Colors & Typography](#phase-2-colors--typography-tuesday) — Establish the basic color scheme and set your typography.
 3. [CSS: Box Model & Layout](#phase-3-box-model--layout-wednesday) — Add padding, spacing, and borders. Adjust content sizing where necessary.
@@ -157,6 +161,7 @@ Color values can be: named colors (`red`, `blue`), hex codes (`#FF5733`), or RGB
 | `border-radius`                                              | Rounds corners               | `border-radius: 8px;`             |
 
 **Shorthand for padding/margin:**
+
 - `padding: 10px;` → all sides
 - `padding: 10px 20px;` → top/bottom, left/right
 
@@ -180,36 +185,37 @@ a:hover {
 
 ## Phase 1: HTML Structure (Monday)
 
-**Shared Content**: Take a look at the examples. You'll notice that all three pages have the exact same header and footer content. They also all share the same picture and caption. 
+**Shared Content**: Take a look at the examples. You'll notice that all three pages have the exact same header and footer content. They also all share the same picture and caption.
 
 You can build these first in the `index.html` file and then copy them over to your `ingredients.html` and `instructions.html` files.
 
-- [ ] Type `html:5` and hit enter to insert the "boilerplate" structure
-- [ ] Update the `title` with the name of your dish
-- [ ] In the `<body>` element, add a `header`, `main`, and `footer` element
-- [ ] In the `<head>` element, update the `<title>` with the name of your dish.
-- [ ] In the `<header>` element, add  a `<h1>` with the name of your dish. 
-- [ ] In the `<header>` element, add a `<nav>` containing three hyperlinks (`<a>`) for each of your three pages.
-- [ ] In the `<main>` element, add a `<figure>` containing an `<img>` and `<figcaption>` for the recipe photo.
-- [ ] In the `<footer>` element, add a hyperlink (`<a>`) element that directs the user to your GitHub profile. It should be nested within a paragraph.
+- [x] Type `html:5` and hit enter to insert the "boilerplate" structure
+- [x] Update the `title` with the name of your dish
+- [x] In the `<body>` element, add a `header`, `main`, and `footer` element
+- [x] In the `<head>` element, update the `<title>` with the name of your dish.
+- [x] In the `<header>` element, add a `<h1>` with the name of your dish.
+- [x] In the `<header>` element, add a `<nav>` containing three hyperlinks (`<a>`) for each of your three pages.
+- [x] In the `<main>` element, add a `<figure>` containing an `<img>` and `<figcaption>` for the recipe photo.
+- [x] In the `<footer>` element, add a hyperlink (`<a>`) element that directs the user to your GitHub profile. It should be nested within a paragraph.
 
 **Home Page Main Content**: Next, build out the HTML content that is unique to the home page:
 
-- [ ] In the `<main>` element, add a `<p>` element with a short description of the dish
+- [x] In the `<main>` element, add a `<p>` element with a short description of the dish
 
 **Ingredients Page Main Content**: Next, build out the HTML content that is unique to the ingredients page:
 
-- [ ] In the `<main>` element, add a `<section>` 
-- [ ] Inside that `<section>` element, add an `<h2>` with the text content "Ingredients".
-- [ ] Below that `<h2>` element, add an unordered list (`<ul>`) of at least 3 ingredients as list items.
+- [x] In the `<main>` element, add a `<section>`
+- [x] Inside that `<section>` element, add an `<h2>` with the text content "Ingredients".
+- [x] Below that `<h2>` element, add an unordered list (`<ul>`) of at least 3 ingredients as list items.
 
 **Instructions Page Main Content**: Next, build out the HTML content that is unique to the instructions page:
 
-- [ ] In the `<main>` element, add a `<section>` 
-- [ ] Inside that `<section>` element, add an `<h2>` with the text content "Instructions".
-- [ ] Below that `<h2>` element, add an ordered list (`<ol>`) of at least 3 instructions as list items.
+- [x] In the `<main>` element, add a `<section>`
+- [x] Inside that `<section>` element, add an `<h2>` with the text content "Instructions".
+- [x] Below that `<h2>` element, add an ordered list (`<ol>`) of at least 3 instructions as list items.
 
 **Tips:**
+
 - Find a recipe image by searching Google Images, right-click, and select "Copy Image Address"
 - Don't forget `alt` text on your image!
 
@@ -219,21 +225,22 @@ You can build these first in the `index.html` file and then copy them over to yo
 
 Add styles to `index.css` to make your recipe card visually appealing:
 
-- [ ] Set a `background-color` on the body. 
-- [ ] Set a text `color` on the body. Make sure that it has good color contrast with the background!
-- [ ] Set a `font-family` on the body (with a fallback like `sans-serif`).
-- [ ] Use `text-align: center` on the body.
-- [ ] Style the headings (`h1`, `h2`) with `color` and `font-size`
-- [ ] Style links with a text `color`
-- [ ] Remove the default underline on links with `text-decoration: none`
-- [ ] Add a hover effect to change the background color of links when hovering over them.
-- [ ] Give sections a distinct `background-color` to make them stand out from the page
-- [ ] Use `text-align: left` on the sections.
-- [ ] Remove bullet points from your ingredients list with `list-style: none` on the `ul`
-- [ ] Add `class` attributes and use a class selector (`.classname`) to style the ingredient list items and the instruction list items as groups of elements.
-- [ ] Add an `id` attribute and use the ID selector (`#idname`) to style the `figcaption` in italics.
+- [x] Set a `background-color` on the body.
+- [x] Set a text `color` on the body. Make sure that it has good color contrast with the background!
+- [x] Set a `font-family` on the body (with a fallback like `sans-serif`).
+- [x] Use `text-align: center` on the body.
+- [x] Style the headings (`h1`, `h2`) with `color` and `font-size`
+- [x] Style links with a text `color`
+- [x] Remove the default underline on links with `text-decoration: none`
+- [x] Add a hover effect to change the background color of links when hovering over them.
+- [x] Give sections a distinct `background-color` to make them stand out from the page
+- [x] Use `text-align: left` on the sections.
+- [x] Remove bullet points from your ingredients list with `list-style: none` on the `ul`
+- [x] Add `class` attributes and use a class selector (`.classname`) to style the ingredient list items and the instruction list items as groups of elements.
+- [x] Add an `id` attribute and use the ID selector (`#idname`) to style the `figcaption` in italics.
 
 **Tips to try:**
+
 - Google "color picker" and use the tool to choose a main color for your color palette. Then, use [ColorSpace](https://mycolor.space/) to generate a palette of complimentary colors!
 
 ---
@@ -242,8 +249,8 @@ Add styles to `index.css` to make your recipe card visually appealing:
 
 Apply spacing and layout to complete your recipe card:
 
-- [ ] Center the body using `max-width` and `margin: auto`
-- [ ] Add a consistent `margin-bottom` to create consistent vertical space between elements (header, main, footer, sections, list items, etc.)
+- [x] Center the body using `max-width` and `margin: auto`
+- [x] Add a consistent `margin-bottom` to create consistent vertical space between elements (header, main, footer, sections, list items, etc.)
 - [ ] Add `margin-right` to create consistent horizontal space between hyperlinks
 - [ ] Add `padding` to create space inside of each section, hyperlinks, and list items
 - [ ] Add `border` to your recipe image
@@ -252,4 +259,3 @@ Apply spacing and layout to complete your recipe card:
 - [ ] Add a `border-top` to the footer to create a visual separator
 - [ ] Use `border-radius` for rounded corners on your sections, list items, hyperlinks, etc.
 - [ ] Control image size by setting a `max-width` on the `figure`
-

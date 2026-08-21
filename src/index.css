@@ -10,7 +10,71 @@ ul {
 }
 
 img {
-  width: 100%;
+  width: 30%;
 }
 
 /* Add your CSS below */
+body {
+  background-color: white;
+  color: blue;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: blue;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  color: blue;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: lightblue;
+}
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+main {
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  margin-bottom: 1rem;
+}
+
+figure {
+  margin-bottom: 1rem;
+}
+
+section {
+  background-color: lightgray;
+  text-align: left;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ingredient-item {
+  margin-bottom: 0.5rem;
+}
+
+.instruction-item {
+  margin-bottom: 0.75rem;
+}
+
+#photo-caption {
+  font-style: italic;
+}
